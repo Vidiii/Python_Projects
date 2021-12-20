@@ -1,3 +1,4 @@
+#Rock Paper Scissors game using python
 import random
 #from random import randint
 def play_game():
@@ -19,9 +20,9 @@ def play_game():
     elif(comp=="r"):
       return False
 
-print("                    Welcome to the ROCK PAPER SCISSOR game.  ")
+print("                    Welcome to the ROCK PAPER SCISSORS game.  ")
 print("Rules for a fair play: ")
-print("rock - paper ---> PAPER winner\nrock - scissor ---> ROCK winner\npaper - scissor ---> SCISSOR winner")
+print("rock - paper ---> PAPER winner\nrock - scissors ---> ROCK winner\npaper - scissors ---> SCISSORS winner")
 print("   type r -> rock\n   type s -> scissor \n   type p -> paper")
 print("\nLets begin !!")
 
@@ -36,14 +37,14 @@ while(play):
   elif(user=="p"):
     user="paper"
   elif(user=="s"):
-    user="scissor"
+    user="scissors"
     
   if(comp=="r"):
     comp="rock"
   elif(comp=="p"):
     comp="paper"
   elif(comp=="s"):
-    comp="scissor"
+    comp="scissors"
   print("You: ", user)
   print("Computer: ",comp)  
   if(result==None):
